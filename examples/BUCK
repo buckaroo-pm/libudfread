@@ -1,0 +1,19 @@
+cxx_binary(
+  name = 'udfcat',
+  srcs = [
+    'udfcat.c',
+  ],
+  deps = [
+    '//:udfread',
+  ],
+)
+
+cxx_binary(
+  name = 'udfls',
+  srcs = [
+    'udfls.c',
+  ],
+  deps = [
+    '//:udfread',
+  ],
+)
