@@ -34,5 +34,5 @@ before_install:
 script:
   - ./buckaroo-client install
   - buck build -c ui.superconsole=DISABLED //:udfread
-  - buck run -c ui.superconsole=DISABLED //examples:udfcat
-  - buck run -c ui.superconsole=DISABLED //examples:udfls
+  - buck build -c ui.superconsole=DISABLED //examples:udfcat
+  - buck build -c ui.superconsole=DISABLED //examples:udfls
